@@ -1,10 +1,9 @@
 let continuar = true;
 while (continuar) {
-  let Hola = prompt(
-    "Bienvenidx, si gustas avanzar con la conversión escribi tu nombre."
-  );
-  let divisa = prompt("Ingresa la divisa por adquirir (Dolar, Euro, Libra):");
-  let cambio = prompt("Ingresa cuantos pesos te gustaria convertir:");
+  alert("Welcome");
+  let Hola = prompt("Si gustas avanzar con la conversión escribi tu nombre");
+  let divisa = prompt("Ingresa la divisa por adquirir (Dolar, Euro o Libra):");
+  let cambio = prompt("Ingresa cuantos AR$S te gustaria convertir:");
   const dolarBlue = 404;
   const euroBlue = 340;
   const libraBlue = 240;
@@ -38,10 +37,9 @@ while (continuar) {
 
     if (resultado !== undefined) {
       alert("La conversión da $" + resultado);
-      let respuesta = prompt("¿Te gustaría seguir operando? (Si/No)");
-      if (respuesta.toLowerCase() == "Si") {
-        // let cambio;
-        let cambio = prompt();
+      let respuesta = prompt("¿Te gustaría seguir operando? (s/n)");
+      if (respuesta.toLowerCase() == "s") {
+        continuar = true;
       } else {
         alert("Gracias por utilizar mi app <3");
         break;
