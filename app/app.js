@@ -37,10 +37,11 @@ while (continuar) {
     }
 
     if (resultado !== undefined) {
-      alert("La conversión da: " + resultado);
+      alert("La conversión da $" + resultado);
       let respuesta = prompt("¿Te gustaría seguir operando? (Si/No)");
       if (respuesta.toLowerCase() == "Si") {
-        let cambio;
+        // let cambio;
+        let cambio = prompt();
       } else {
         alert("Gracias por utilizar mi app <3");
         break;
